@@ -7,7 +7,7 @@ services:
     restart: unless-stopped
     volumes:
     - type: bind
-      source: https://raw.githubusercontent.com/AlexanderLucasWolf/czuprin-2023/master/mockoon/project-cs_lokal-api.json
+      source: ./mockoon/project-cs_lokal-api.json
       target: /data/env.json
     ports:
       - "3000:3000"
