@@ -10,16 +10,35 @@
 <body>
 
     <header class="header-main | flex">
-        <span class="Icon"><ion-icon class="menu-outline" name="menu-outline"></ion-icon></span>
+        <div class="header-inner">
+            <span class="Icon"><ion-icon class="available-devices-outline" name="hardware-chip-outline"></ion-icon></ion-icon></span>
+            <span class="Icon"><ion-icon class="settings-outline" name="settings-outline"></ion-icon></ion-icon></span>
+        </div>
     </header>
 
     <section class="sidebar | absolute">
-        <p>Name:</p>
-        <p>Beschreibung:</p>
+        <p>Name: <span id="information-name"></span></p>
+        <p>Seriennummer: <span id="information-serial-id"></span></p>
+        <p>Produktnummer: <span id="information-product-id"></span></p>
+        <p>Koordinaten (X, Y, Z): <span id="information-coordinates"></span></p>
+        <p>WLAN: <span id="information-wifi"></span></p>
+        <p>Bluetooth: <span id="information-bluetooth"></span></p>
     </section>
 
-    <main class="main">
+    <section>
+        <div class="available-devices">
+            <div class="available-devices-close">
+                <ion-icon name="close-circle-outline"></ion-icon>
+            </div>
+            <div class="available-devices-inner" >
+                <h3>Verfügbare Geräte</h3>
+            </div>
+            
+        </div>
+    </section>
 
+    <main class="main draggableSpace">
+        <div id ="one" class="draggableIcon">  </div>
     </main>
 </body>
 
