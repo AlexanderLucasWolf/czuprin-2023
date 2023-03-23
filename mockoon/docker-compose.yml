@@ -8,7 +8,7 @@ services:
     restart: unless-stopped
     volumes:
     - type: bind
-      source: ./project-cs_lokal-api.json
+      source: ./current_env_2.json
       target: /data/env.json
     ports:
       - "3000:3000"
