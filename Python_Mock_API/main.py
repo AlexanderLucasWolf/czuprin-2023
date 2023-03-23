@@ -132,7 +132,7 @@ def threaded_function3(arg):
         for i in range(0, 360, 15):
             time.sleep(1)
             value = math.sin(math.pi/180*i)
-            add_value(3, i)
+            add_value(3, value)
 
 
 app = Flask(__name__)
