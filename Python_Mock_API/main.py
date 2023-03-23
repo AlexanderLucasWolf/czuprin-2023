@@ -161,4 +161,4 @@ if __name__ == '__main__':
     thread2.start()
     thread3.start()
     print("thread finished...exiting")
-    app.run()
+    app.run(host="0.0.0.0")
