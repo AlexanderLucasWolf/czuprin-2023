@@ -11,6 +11,6 @@ services:
       source: ./project-cs_lokal-api.json
       target: /data/env.json
     ports:
-      - "3000:3000"
+      - "3000:1567"
 networks:
   node-red-net:
