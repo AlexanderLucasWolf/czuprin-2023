@@ -1,0 +1,442 @@
+{
+  "uuid": "24066d1d-2abc-4c0f-8ae4-f45f5efc5a07",
+  "lastMigration": 22,
+  "name": "Demo API",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 80,
+  "hostname": "0.0.0.0",
+  "routes": [
+    {
+      "uuid": "7bd419e7-cc22-4d34-a371-a79b91555cba",
+      "documentation": "Generate random body (JSON, text, CSV, etc) with templating",
+      "method": "get",
+      "endpoint": "iolink/v1/devices/master1port1/identification",
+      "responses": [
+        {
+          "uuid": "3d612073-8245-4048-a32b-0d3ae12fbbf2",
+          "body": "{\"vendorId\":26,\"deviceId\":393732,\"productId\":\"Prod-123456\",\"productText\": \"RFID_Reader\"}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Creates 10 random users, or the amount specified in the 'total' query param",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "534dab02-23bd-459d-a47f-34eb70ac96dc",
+      "documentation": "Generate random body (JSON, text, CSV, etc) with templating",
+      "method": "get",
+      "endpoint": "iolink/v1/devices/master1port2/identification",
+      "responses": [
+        {
+          "uuid": "aff4a741-4526-4b25-a2a5-07ac526ce3e7",
+          "body": "{\"vendorId\":26,\"deviceId\":330249,\"productId\":\"Prod-123456\",\"productText\": \"Smart_Light5\"}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Creates 10 random users, or the amount specified in the 'total' query param",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "1df0daf6-dff6-40cc-b327-722e52c9fb5c",
+      "documentation": "Generate random body (JSON, text, CSV, etc) with templating",
+      "method": "get",
+      "endpoint": "iolink/v1/devices/master1port3/identification",
+      "responses": [
+        {
+          "uuid": "e6332424-3bbb-490b-9590-4beee91f528e",
+          "body": "{\"vendorId\":26,\"deviceId\":330249,\"productId\":\"Prod-123456\",\"productText\": \"RFID_Reader\"}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Creates 10 random users, or the amount specified in the 'total' query param",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "287fcda2-746b-4d6e-a328-c1700162d55c",
+      "documentation": "Generate random body (JSON, text, CSV, etc) with templating",
+      "method": "get",
+      "endpoint": "iolink/v1/devices/master1port4/identification",
+      "responses": [
+        {
+          "uuid": "a455abcc-9f51-438d-8c70-86f7be37d81f",
+          "body": "{\"vendorId\":26,\"deviceId\":330249,\"productId\":\"Prod-123456\",\"productText\": \"RFID_Reader\"}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Creates 10 random users, or the amount specified in the 'total' query param",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "e6469afc-6feb-476f-89f7-265459fec974",
+      "documentation": "Generate random body (JSON, text, CSV, etc) with templating",
+      "method": "get",
+      "endpoint": "iolink/v1/devices/master1port5/identification",
+      "responses": [
+        {
+          "uuid": "b21abf7d-f8de-488e-a4de-8dea1127b42d",
+          "body": "{\"vendorId\":26,\"deviceId\":330249,\"productId\":\"Prod-123456\",\"productText\": \"RFID_Reader\"}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Creates 10 random users, or the amount specified in the 'total' query param",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "5ac85c5a-2153-437c-a081-eaa868be8290",
+      "documentation": "Generate random body (JSON, text, CSV, etc) with templating",
+      "method": "get",
+      "endpoint": "iolink/v1/devices/master1port6/identification",
+      "responses": [
+        {
+          "uuid": "a1490c8f-3af3-4b2c-a5af-75c92fee3bb3",
+          "body": "{\"vendorId\":26,\"deviceId\":330249,\"productId\":\"Prod-123456\",\"productText\": \"RFID_Reader\"}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Creates 10 random users, or the amount specified in the 'total' query param",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "e8be7b6e-dfd6-460e-972e-6c25275b02b8",
+      "documentation": "Generate random body (JSON, text, CSV, etc) with templating",
+      "method": "get",
+      "endpoint": "iolink/v1/devices/master1port7/identification",
+      "responses": [
+        {
+          "uuid": "d97d2487-5bee-4a12-9289-2134ab1488d6",
+          "body": "{\"vendorId\":26,\"deviceId\":330249,\"productId\":\"Prod-123456\",\"productText\": \"RFID_Reader\"}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Creates 10 random users, or the amount specified in the 'total' query param",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "664175c4-fe0a-48b2-8f25-ba2b5416812b",
+      "documentation": "Generate random body (JSON, text, CSV, etc) with templating",
+      "method": "get",
+      "endpoint": "iolink/v1/devices/master1port8/identification",
+      "responses": [
+        {
+          "uuid": "6281f3ce-588b-4c51-95fb-1edc39f3f352",
+          "body": "{\"vendorId\":26,\"deviceId\":330249,\"productId\":\"Prod-123456\",\"productText\": \"RFID_Reader\"}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Creates 10 random users, or the amount specified in the 'total' query param",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "9ee53e87-1c45-48ac-bca3-4df46ca99e00",
+      "documentation": "Generate random body (JSON, text, CSV, etc) with templating",
+      "method": "get",
+      "endpoint": "iolink/v1/devices/master1port1/processdata/getdata/value",
+      "responses": [
+        {
+          "uuid": "ecbdd930-3c0d-4621-9f2a-df1190197b85",
+          "body": "{\"measure\":{\"ioLink\":{\"valid\":true,\"value\":[129,210,4,1,80,93,218,215,111,100]},\"pin4Value\":false,\"pin2Value\":false}}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Creates 10 random users, or the amount specified in the 'total' query param",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "f22d7dc6-2334-4985-81f8-da1c69ec685f",
+      "documentation": "Generate random body (JSON, text, CSV, etc) with templating",
+      "method": "get",
+      "endpoint": "iolink/v1/devices/master1port2/processdata/getdata/value",
+      "responses": [
+        {
+          "uuid": "0d0bcdb2-6ab2-4127-9a63-b453a52e3f42",
+          "body": "",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Creates 10 random users, or the amount specified in the 'total' query param",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "69dceead-999d-4de4-8622-20fe627f645d",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "iolink/v1/devices/master1port2/processdata/value",
+      "responses": [
+        {
+          "uuid": "ed3d9fa2-38e0-4dd6-b6fb-f729d4315409",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 204,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "c18c6ad3-c84b-453b-8e40-35bf4aef0d93",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "api/balluff/v1/users/login",
+      "responses": [
+        {
+          "uuid": "c9e5a71c-f2d6-45d2-90cc-0a5bd8b62472",
+          "body": "{\"JSESSIONID\":\"token\"}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "7494feb5-d0f4-4ee2-991a-f5a2bca0d22b",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "iolink/v1/devices/master1port3/processdata/value",
+      "responses": [
+        {
+          "uuid": "86b3cf0c-6a16-4de1-a900-19d7cff82bd8",
+          "body": "",
+          "latency": 0,
+          "statusCode": 204,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "2c9172fb-2640-4ff8-947d-df311182592f",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "iolink/v1/devices/master1port4/processdata/value",
+      "responses": [
+        {
+          "uuid": "fd33969b-14c3-4922-8a51-7219876f03fa",
+          "body": "",
+          "latency": 0,
+          "statusCode": 204,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "325cc006-28c7-4883-8749-c552c1d211cb",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "iolink/v1/devices/master1port5/processdata/value",
+      "responses": [
+        {
+          "uuid": "2af3eaac-8a96-425d-818a-e17311f85c5e",
+          "body": "",
+          "latency": 0,
+          "statusCode": 204,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "c81f174c-cabe-49b2-871b-fc1f5f610ad3",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "iolink/v1/devices/master1port6/processdata/value",
+      "responses": [
+        {
+          "uuid": "6c1de831-738d-4664-971d-75085d71c02b",
+          "body": "",
+          "latency": 0,
+          "statusCode": 204,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "PFX",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ]
+}

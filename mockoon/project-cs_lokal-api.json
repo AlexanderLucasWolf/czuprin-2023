@@ -1,0 +1,92 @@
+{
+  "uuid": "1a87248f-a9c3-452d-921e-59697a61e8c7",
+  "lastMigration": 22,
+  "name": "Project cs lokal api",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3000,
+  "hostname": "0.0.0.0",
+  "routes": [
+    {
+      "uuid": "95b188d1-5f3c-49ab-9525-aab8fa30818d",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/devices",
+      "responses": [
+        {
+          "uuid": "6f54ad22-095e-4751-ac55-0f9a7ffe709c",
+          "body": "[\n   {\n      \"local_device_id\":0,\n      \"serial_id\":24354325543,\n      \"product_id\":2345534,\n      \"product_type\":3,\n      \"product_name\":\"CSM Project\",\n      \"bluetooth_mac\":\"C0-FD-C2-DF-76-5A\",\n      \"wlan_mac\":\"C0-FD-C2-DF-76-5B\",\n      \"pos_con\":[\n         1,\n         2,\n         3\n      ],\n      \"data_con\":[\n         \n      ],\n      \"postition\":{\n         \"x\":0,\n         \"y\":0,\n         \"z\":0\n      },\n      \"bridging_device\":null,\n      \"device_indication_colour\":null\n   },\n   {\n      \"local_device_id\":1,\n      \"serial_id\":9214708947,\n      \"product_id\":32057493,\n      \"product_type\":32,\n      \"product_name\":\"Temperatur Module\",\n      \"bluetooth_mac\":\"40-FD-C2-DF-76-5A\",\n      \"wlan_mac\":\"40-FD-C2-DF-76-5B\",\n      \"pos_con\":[\n         0,\n         2,\n         3\n      ],\n      \"data_con\":[\n         0\n      ],\n      \"postition\":{\n         \"x\":1.423,\n         \"y\":4.234,\n         \"z\":3.243\n      },\n      \"bridging_device\":\"CSM Mini\",\n      \"device_indication_colour\":\"red\"\n   },\n   {\n      \"local_device_id\":2,\n      \"serial_id\":53423426,\n      \"product_id\":32057493,\n      \"product_type\":32,\n      \"product_name\":\"Temperatur Module\",\n      \"bluetooth_mac\":\"A0-FD-C2-DF-76-5A\",\n      \"wlan_mac\":\"A0-FD-C2-DF-76-5B\",\n      \"pos_con\":[\n         0,\n         1,\n         3\n      ],\n      \"data_con\":[\n         0\n      ],\n      \"postition\":{\n         \"x\":5.423,\n         \"y\":4.234,\n         \"z\":3.243\n      },\n      \"bridging_device\":null,\n      \"device_indication_colour\":null\n   },\n   {\n      \"local_device_id\":3,\n      \"serial_id\":645345643,\n      \"product_id\":32057493,\n      \"product_type\":32,\n      \"product_name\":\"Temperatur Module\",\n      \"bluetooth_mac\":\"B0-FD-C2-DF-76-5A\",\n      \"wlan_mac\":\"B0-FD-C2-DF-76-5B\",\n      \"pos_con\":[\n         0,\n         1,\n         2\n      ],\n      \"data_con\":[\n         0\n      ],\n      \"postition\":{\n         \"x\":1.423,\n         \"y\":1.324,\n         \"z\":1.342\n      },\n      \"bridging_device\":null,\n      \"device_indication_colour\":null\n   },\n   {\n      \"local_device_id\":null,\n      \"serial_id\":3456246,\n      \"product_id\":32057493,\n      \"product_type\":32,\n      \"product_name\":\"Temperatur Module\",\n      \"bluetooth_mac\":\"D0-FD-C2-DF-76-5A\",\n      \"wlan_mac\":\"D0-FD-C2-DF-76-5B\",\n      \"pos_con\":[\n         0\n      ],\n      \"data_con\":[\n         null\n      ],\n      \"postition\":{\n         \"x\":45.423,\n         \"y\":24.324,\n         \"z\":24.342\n      },\n      \"bridging_device\":null,\n      \"device_indication_colour\":null\n   },\n   {\n      \"local_device_id\":null,\n      \"serial_id\":54323244,\n      \"product_id\":32057493,\n      \"product_type\":32,\n      \"product_name\":\"Temperatur Module\",\n      \"bluetooth_mac\":\"E0-FD-C2-DF-76-5A\",\n      \"wlan_mac\":\"E0-FD-C2-DF-76-5B\",\n      \"pos_con\":[\n         0\n      ],\n      \"data_con\":[\n         null\n      ],\n      \"postition\":{\n         \"x\":34.423,\n         \"y\":3.324,\n         \"z\":2.342\n      },\n      \"bridging_device\":null,\n      \"device_indication_colour\":null\n   }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "485291b1-23b7-436f-8f8c-81d67ed8ea3c",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/product/mask/32057493",
+      "responses": [
+        {
+          "uuid": "3796c006-c6de-488b-8f84-691a69e86f78",
+          "body": "{\n   \"alternative_product_name\":\"Temperatur Sensor\",\n   \"configuation\":[\n      {\n         \"name\":\"Präzision\",\n         \"ref_number\": \"1\",\n         \"type\":\"drop_down\",\n         \"list\":[\n            \"schnell\",\n            \"präzise\"\n         ]\n      },\n      {\n         \"name\":\"Temperatur\",\n         \"ref_number\": \"2\",\n         \"type\":\"label\",\n         \"width\":\"2\",\n         \"unit\":\"°C\",\n         \"label_colour\":{\n            \"-180\":\"blue\",\n            \"0\":\"green\",\n            \"70\":\"red\"\n         }\n      },\n      {\n         \"name\":\"Ø Temperatur\",\n         \"ref_number\": \"3\",\n         \"type\":\"label\",\n         \"width\":\"2\",\n         \"unit\":\"°C\",\n         \"label_colour\":{\n            \"-180\":\"blue\",\n            \"0\":\"green\",\n            \"70\":\"red\"\n         }\n      },\n      {\n         \"name\":\"Temperaturverlauf\",\n         \"ref_number\": \"4\",\n         \"type\":\"time-graph\",\n         \"unit\":\"°C\"\n      }\n   ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ]
+}

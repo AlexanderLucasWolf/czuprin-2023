@@ -1,0 +1,16 @@
+version: "3"
+services:
+  app:
+    image: mockoon/cli:latest
+    command: mockoon-cli start --data data/env.json --log-transaction --port 3000
+    networks:
+      - node-red-net
+    restart: unless-stopped
+    volumes:
+    - type: bind
+      source: ./current_env_2.json
+      target: /data/env.json
+    ports:
+      - "3000:3000"
+networks:
+  node-red-net:
