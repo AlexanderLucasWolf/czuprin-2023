@@ -7,7 +7,7 @@ services:
     restart: unless-stopped
     volumes:
     - type: bind
-      source: C:\Users\
+      source: /root/mockoon/czuprin-2023/mockoon/project-cs_lokal-api.json
       target: /data/env.json
     ports:
       - "3000:3000"
