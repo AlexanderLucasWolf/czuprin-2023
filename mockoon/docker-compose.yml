@@ -2,7 +2,7 @@ version: "3"
 services:
   app:
     image: mockoon/cli:latest
-    command: mockoon-cli start --data data/env.json --log-transaction --port 1567
+    command: mockoon-cli start --data data/env.json --log-transaction --port 3000
     networks:
       - node-red-net
     restart: unless-stopped
@@ -11,6 +11,6 @@ services:
       source: ./project-cs_lokal-api.json
       target: /data/env.json
     ports:
-      - "1567:1567"
+      - "3000:3000"
 networks:
   node-red-net:
