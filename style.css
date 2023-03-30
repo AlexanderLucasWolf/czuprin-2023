@@ -78,6 +78,8 @@ select {
   --clr-font-two: rgba(0, 0, 0, 1);
   --clr-font-three: rgba(51, 51, 51, 1);
 
+  --svg-filter-black: invert(100%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+
   --ff-primary: "Roboto", sans-serif;
 
   --clickable-cursor: pointer;
@@ -223,17 +225,16 @@ body{
 .draggableIcon {
   width: 50px;
   height: 50px;
-  background-color: var(--clr-bg-header);
+  filter: var(--svg-filter-black);
   border-radius: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
   z-index: 1;
-  top: 50%;
-  left: 50%;
+  cursor: var(--clickable-cursor);
 }
 
 .draggableIcon:hover {
-  cursor: move;
+  /*cursor: move;*/
 }
 
 /*-------------------------------------Available Devices------------------------*/

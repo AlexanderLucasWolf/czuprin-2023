@@ -1,5 +1,10 @@
 
-const api = 'http://czuprin.com:3000/api/devices'
+/*const api = 'http://czuprin.com:3000/api/devices'*/
+
+/*------------------------------Generate Devices-------------------*/
+
+const createDevices = document.querySelector('.create-devices')
+generateDevices()
 
 /*------------------------------Variables Declaration-------------------*/
 
@@ -11,10 +16,10 @@ const openAvailableDevices = document.querySelector('.available-devices-outline'
 const closeAvailableDevices = document.querySelector('.available-devices-close')
 let isMoving = false
 
-/*------------------------------Moving Icon on Mouse Move ----------------*/
+/*------------Moving Icon on Mouse Move - Currently disabled---------------*/
 
-
-draggableIcon.onmousedown = function(e) {
+/*function move () {
+    draggableIcon.onmousedown = function(e) {
     showInformation()
       isMoving = true
       let draggableSpaceRect = draggableSpace.getBoundingClientRect()
@@ -43,6 +48,16 @@ draggableIcon.onmousedown = function(e) {
       draggableIcon.style.pointerEvents = 'all'
       isMoving = false
   }
+}
+
+move()*/
+
+    let devices = []
+
+    for (var i = 0; i < api.length; i++) {
+        devices[i] = document.getElementById(`device${i}`)
+    }
+
 
   /*------------------------------Open Information-----------------------------*/
 
@@ -65,8 +80,45 @@ draggableIcon.onmousedown = function(e) {
 
       /*--------------------------------API access------------------------------*/
 
-      fetch(api)
+      /*fetch(api)
       .then((resp) => resp.json())
       .then((data) => {
         console.log(true)
-      })
+      })*/
+
+      /*---------------------------------Create Devices on Map--------------------*/
+
+      function renderDevices(i) {
+        let image = ""
+        if(api[i].product_name == "CSM Project") {
+          image = "images/csm-station.svg"
+        } else if(api[i].product_name == "Temperatur Module"){
+          image = "images/w-sensor.svg"
+        } else if(api[i].product_name == "CSM Mini") {
+          image ="images/csm-mini.svg"
+        } else {
+          image = "images/censor-not-found.svg"
+        }
+        return `
+        <div id ="device${i}" style="
+        top: calc(50% + ${(api[i].postition.y)}rem);
+        left: calc(50% + ${(api[i].postition.x)}rem - (var(--sidebar-width) / 2));
+        "
+        class="draggableIcon"> <img draggable="false" src="${image}" alt=""> </div>
+        `
+      }
+
+      function generateDevices() {
+        displayDevices = " "
+        createDevices.innerHTML = displayDevices;
+        for (var i = 0; i < api.length; i++) {
+             displayDevices += renderDevices(i);
+             createDevices.innerHTML = displayDevices;
+            }
+      }
+
+      draggableIcon.addEventListener('click', test())
+
+      function test() {
+        console.log(true)
+      }
