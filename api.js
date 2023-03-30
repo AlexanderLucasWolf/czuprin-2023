@@ -1,4 +1,4 @@
-var api = [
+let api = [
     {
        "local_device_id":0,
        "serial_id":24354325543,
