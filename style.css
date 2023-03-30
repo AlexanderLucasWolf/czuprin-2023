@@ -233,9 +233,9 @@ body{
   cursor: var(--clickable-cursor);
 }
 
-.draggableIcon:hover {
-  /*cursor: move;*/
-}
+/*.draggableIcon:hover {
+  cursor: move;
+}*/
 
 /*-------------------------------------Available Devices------------------------*/
 
