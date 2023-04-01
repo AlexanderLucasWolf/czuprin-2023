@@ -78,7 +78,8 @@ select {
   --clr-font-two: rgba(0, 0, 0, 1);
   --clr-font-three: rgba(51, 51, 51, 1);
 
-  --svg-filter-black: invert(100%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+  --svg-filter-black: invert(100%) sepia(0) saturate(1) hue-rotate(0) brightness(0) contrast(100%);
+  --clr-box-shadow: rgba(0, 0, 0, 0.13);
 
   --ff-primary: "Roboto", sans-serif;
 
@@ -224,8 +225,7 @@ body{
 
 .draggableIcon {
   width: 50px;
-  height: 50px;
-  filter: var(--svg-filter-black);
+  height: 50px;  
   border-radius: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -233,9 +233,29 @@ body{
   cursor: var(--clickable-cursor);
 }
 
+.draggableIcon img {
+  filter: var(--svg-filter-black);
+}
+
 /*.draggableIcon:hover {
   cursor: move;
 }*/
+
+.draggableIcon:hover > .device-position-span {
+  color: var(--clr-font-two);
+  background-color: var(--clr-bg-one);
+  padding: 0.1rem;
+  transition: 0 0.1s;
+}
+
+.device-position-span {
+  color: transparent;
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+}
 
 /*-------------------------------------Available Devices------------------------*/
 
@@ -250,6 +270,8 @@ body{
   left: calc(50% - (var(--sidebar-width) / 2));
   transform: translate(-50%, -50%);
   border-radius: 2rem;
+  overflow: auto;
+  scrollbar-width: none;
 }
 
 .available-devices-close {
@@ -274,6 +296,41 @@ body{
 .available-devices-inner :is(h3) {
   text-align: center;
   font-size: var(--fs-700);
+}
+
+.device-list-item{
+  position: relative;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  -webkit-box-shadow: 8px 17px 20px 0px var(--clr-box-shadow); 
+  box-shadow: 8px 17px 20px 0px var(--clr-box-shadow);
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  font-weight: var(--fw-bold);
+  cursor: var(--clickable-cursor)
+}
+
+.device-list-item:hover {
+  background-color: var(--clr-bg-two);
+}
+
+.device-list-item img {
+  position: absolute;
+  filter: var(--svg-filter-black);
+  top: 10%;
+  right: 10%;
+  width: 25px;
+}
+
+.device-list-item-mini-describtion {
+  font-weight: var(--fw-regular);
+  display: flex;
+  font-size: var(--fs-400);
+}
+
+.device-list-item-mini-describtion > p {
+  margin-right: 1rem;
 }
 
 /*--------------------------------------Utility-Classes-------------------------*/
