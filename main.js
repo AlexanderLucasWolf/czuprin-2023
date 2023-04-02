@@ -14,6 +14,7 @@ const openAvailableDevices = document.querySelector('.available-devices-outline'
 const closeAvailableDevices = document.querySelector('.available-devices-close')
 let isMoving = false
 const listAvailableDevices = document.querySelector('.available-devices-inner-list')
+let deviceListNumber = 0
 
   /*--------------------------------------Generate------------------------------*/
 
@@ -45,6 +46,7 @@ const listAvailableDevices = document.querySelector('.available-devices-inner-li
 
       function renderDevices(i) {
         let image = ""
+        deviceListNumber += 1
         if(api[i].product_name == "CSM Project") {
           image = "images/csm-station.svg"
         } else if(api[i].product_name == "Temperatur Module"){
@@ -112,7 +114,6 @@ const listAvailableDevices = document.querySelector('.available-devices-inner-li
       function showDescribtion() {
         console.log(true)
       }
-
 
       /*------------Moving Icon on Mouse Move - Currently disabled---------------*/
 
