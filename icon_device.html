@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .backround_item{
+            background-color: rgba(255, 166, 0, 0.12);
+            width: 50px;
+            height: 50px;
+            
+  box-shadow: 8px 17px 20px 0px rgba(255, 166, 0, 0.12); 
+  border: none;
+  outline: none;
+            
+            border-radius: 10px;
+            outline-width: 3px;
+            outline-color: orange;
+            outline-style: auto;
+            padding: 5px;
+            
+            
+
+        }
+
+        .backround_item:hover{
+            background-color: white;
+
+        }
+        .img__description {
+            position:absolute;
+            
+            bottom: 5px;
+            
+    
+            
+            background: rgba(217, 217, 217, 0.72);
+            color: #000;
+            border-radius: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            
+            visibility: hidden;
+            opacity: 0;
+
+          
+            /* transition effect. not necessary */
+            transition: opacity .2s, visibility .2s;
+          }
+          
+          .backround_item:hover .img__description {
+            visibility: visible;
+            opacity: 1;
+          }
+
+
+        .frame{
+            
+            column-gap: 2vw;
+            
+            
+            display: grid;
+            border-radius: 20px;
+            outline-width: 3px;
+            outline-color: black;
+            outline-style: auto;
+            padding: 10px;
+            grid-template-columns: auto auto auto auto auto auto auto auto;
+            position: fixed;
+bottom: 10px;
+left: 50%;
+transform: translate(-50%, 0);
+
+display: flex;
+  flex-wrap: nowrap;
+
+
+            
+        
+
+        }
+
+        .bilder{
+            height: 50px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+
+        .text{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 10px;
+            color: rgb(2, 2, 2);
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="frame">
+
+    
+    <div class="backround_item" >
+        <img src="./images/csm-mini.svg" class="bilder">
+        <div class="img__description">
+            a
+        </div>
+        
+    </div>
+            
+    <div class="backround_item">
+        <img src="./images/csm-mini.svg" class="bilder">
+        <div class="img__description">
+            a
+        </div>
+        
+    </div>
+
+    <div class="backround_item">
+        <img src="./images/csm-station.svg" class="bilder">
+        
+    </div>
+    <div class="backround_item">
+        <img src="./images/w-sensor.svg" class="bilder">
+        
+    </div>
+    <div class="backround_item">
+        <img src="./images/w-sensor.svg" class="bilder">
+       
+    </div>
+    <div class="backround_item">
+        <img src="./images/w-sensor.svg" class="bilder">
+        
+    </div>
+</div>
+
+</body>
